@@ -1,0 +1,77 @@
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+}
+
+main > div {
+	background-color: white;
+	border-radius: 10px;
+	font-size: 30px;
+	padding: 20px;
+	text-align: left;
+}
+
+/* color the text of links black */
+main > div > a {
+	color: black;
+	font-size: 18px;
+}
+
+/* change the color of links on hover using mouse */
+main > div > a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* change the color of links on focus using tab button */
+main > div > a:focus {
+	background-color: black;
+	color: white;
+	outline: none;
+}
+
+main > div > img {
+	width: 100%;
+}
+
+#interest2 {
+	grid-area: area2;
+}
+
+#interest3 {
+	grid-area: area3;
+}
+
+main {
+	background-color: black;
+	display: grid;
+	grid-template-areas:
+	'.'
+	'area2'
+	'area2'
+	'area3'
+	'area3'
+	'area3'
+	'.'
+	'.'
+	'.';
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	main {
+		grid-template-areas:
+		'. area3 .'
+		'area2 area3 .'
+		'area2 area3 .';
+	}
+
+}

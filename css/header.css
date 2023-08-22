@@ -1,0 +1,101 @@
+/* Mobile First View: */
+
+/* Style the header which contains the navigation links */
+header{
+	background-color: grey;
+	overflow: hidden;
+}
+
+/* hide the checkbox whoch we use for the hamburger menu fuctionality */
+#hamburger_checkbox {
+	display: none;
+}
+
+/* Style the image we use as a label for the hamburger menu checkbox */
+#hamburger_image {
+	background-color: white;
+	display: block;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	width: 10%;
+}
+
+/* show or hidde the navigation links depending on whether the hamburger */
+input[id="hamburger_checkbox"]:not(:checked) + nav {
+	display: none;
+
+}
+
+/* style the web page heading */
+h1 {
+	color: white;
+	float: left;
+	padding: 0 20px;
+	text-align: center;
+	width: 100%;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+	color: white;
+	float: left;
+	font-size: 17px;
+	padding: 30px 20px;
+	text-align: center;
+	text-decoration: none;
+	width: 100%;
+}
+
+
+/* change the colour of links on hover using mouse */
+nav a:hover {
+	background-color: white;
+	color: black;
+}
+
+/* change the colour of links on focus using the tab key */
+nav a:focus {
+	background-color: white;
+	color: black;
+	outline: none;
+}
+
+/* change the colour of the active/current link */
+.active_nav {
+	background-color: #2a6592;
+	color: white;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+/* hide the hamburger image use as a label for the hambuger menu checkbox */
+.hamburger_image {
+	display:none;
+}
+
+/* show the navigation links... even if the hamgurger menu checkbox is not selected (menu open) */
+input[id="hamburger_checkbox"]:not(:checked) + nav {
+	display:block;
+}
+
+/* style the peru heading */
+h1 {
+	text-align: left;
+	width: 390px;
+}
+
+/* Style the navigation */
+nav{
+	float: right;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+	width: auto;
+}
+
+}

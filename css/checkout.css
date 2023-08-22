@@ -1,0 +1,177 @@
+h2 {
+	font-size: 24px;
+	font-weight: normal;
+	text-align: center;
+}
+
+p {
+	font-size: 18px;
+}
+
+main > div {
+	background-color: white;
+	border-radius: 20px;
+	font-size: 40px;
+	padding: 10px;
+	text-align: left;
+}
+
+/* color the text of links black */
+main > div > a {
+	color: black;
+	font-size: 18px;
+}
+
+/* change the color of links on hover using mouse */
+main > div > a:hover {
+	background-color: black;
+	color: white;
+}
+
+/* change the color of links on focus using tab button */
+main > div > a:focus {
+	background-color: black;
+	color: white;
+	outline: none;
+}
+
+main > div > img {
+	width: 100%;
+}
+
+#interest2 {
+	grid-area: area2;
+}
+
+#interest3 {
+	grid-area: area3;
+}
+
+main {
+	background-color: black;
+	display: grid;
+	grid-template-areas:
+	'.'
+	'area2'
+	'area2'
+	'area3'
+	'area3'
+	'area3'
+	'.'
+	'.'
+	'.';
+	grid-gap: 20px;
+	padding: 20px;
+}
+
+/* large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+	main {
+		grid-template-areas:
+		'. area3 .'
+		'area2 area3 .'
+		'area2 area3 .';
+	}
+
+}
+/* have no idea if the below will work but this is to be deleted */
+form {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	margin: 20px auto;
+	padding: 35px;
+	width: 90%;
+}
+
+form textarea {
+	width: 100%;
+	height: 150px;
+}
+
+input[type=text], input[type=email] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+	width: 100%;
+	background-color: #2a6592;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover,	
+input[type=submit]:focus, input[type=reset]:focus {
+	filter: brightness(125%);
+}
+
+table {
+	border-collapse: collapse;
+	margin: 0 auto 8px auto;
+	padding: 8px;
+	width: 80%;
+}
+
+td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+}
+
+th {
+	background-color: #2a6592;
+	color: white;
+}
+
+tr:nth-child(odd) {
+	background-color: white;
+}
+
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	form {
+		width: 90%;	
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	form {
+		width: 70%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	form {
+		width: 60%;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	form {
+		width: 60%;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+	form {
+		width: 60%;
+	}
+}
